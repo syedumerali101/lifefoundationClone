@@ -65,13 +65,17 @@ const TabButton = navigationProps => {
 const TabBar = ({state, descriptors, navigation}) => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.leftContainerStyle}>
+      <TouchableOpacity
+        style={styles.leftContainerStyle}
+        onPress={() => navigation.navigate('Home')}>
         <Image source={tabIcons.home} style={styles.leftIconStyle} />
       </TouchableOpacity>
       <TouchableOpacity style={styles.centerContainerStyle}>
         <AppText>Live Life Well</AppText>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.leftContainerStyle}>
+      <TouchableOpacity
+        style={styles.leftContainerStyle}
+        onPress={() => navigation.navigate('MenuScreen')}>
         <Image source={tabIcons.menu} style={styles.leftIconStyle} />
       </TouchableOpacity>
     </View>

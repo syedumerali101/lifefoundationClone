@@ -81,8 +81,8 @@ const HomeScreen = () => {
         style={{flex: 1}}
         contentContainerStyle={{alignItems: 'center', paddingBottom: vh * 10}}>
         <AppButton
-          icon={icons.call}
-          text="I Need Some Help"
+          icon={icons.phoneRedIcon}
+          text=" I Need Some Help"
           buttonStyle={styles.buttonStyle}
         />
 
@@ -209,8 +209,6 @@ const HomeScreen = () => {
           </AppText>
         </View>
       </ScrollView>
-
-      <TabBar />
     </View>
   );
 };

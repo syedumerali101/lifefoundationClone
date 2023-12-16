@@ -10,6 +10,14 @@ import HeaderLogo from '../Components/HeaderLogo';
 import HeaderLeft from '../Components/HeaderLeft';
 import TabBar from '../Components/TabBar';
 import ContactUs from '../Screens/ContactUs';
+import Feedback from '../Screens/Feedback';
+import SideBarScreen from '../Screens/SideBarScreen';
+import {createStackNavigator} from '@react-navigation/stack';
+import StackNavigator from './StackNavigator';
+import MissionAndVisionStatements from '../Screens/MissionAndVisionStatements';
+import AboutLifeFoundation from '../Screens/AboutLifeFoundation';
+import Stories from '../Screens/Stories';
+import Inspiration from '../Screens/Inspiration';
 const Tabs = createBottomTabNavigator();
 const TabsNavigation = () => {
   return (
@@ -29,12 +37,70 @@ const TabsNavigation = () => {
       }}>
       <Tabs.Screen component={LiveLifeWellScreen} name="LiveLifeWellScreen" />
       <Tabs.Screen component={HomeScreen} name="Home" />
-      <Tabs.Screen component={MenuScreen} name="MenuScreen" />
+      <Tabs.Screen
+        component={SideBarScreen}
+        name="MenuScreen"
+        options={{headerShown: false}}
+      />
+      <Tabs.Screen name="Feedback" component={Feedback} />
+      <Tabs.Screen name="ContactUs" component={ContactUs} />
+      <Tabs.Screen
+        name="MissionAndVisionStatements"
+        component={MissionAndVisionStatements}
+      />
+      <Tabs.Screen name="AboutLifeFoundation" component={AboutLifeFoundation} />
+
+      <Tabs.Screen name="Stories" component={Stories} />
+
+      <Tabs.Screen name="Inspiration" component={Inspiration} />
     </Tabs.Navigator>
   );
 };
 const Navigation = () => {
-  return <HomeScreen />;
+  return <TabsNavigation />;
+  const Stack = createStackNavigator();
+
+  return (
+    <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Screen name="TabsNavigation" component={TabsNavigation} />
+      <Stack.Screen
+        name="Feedback"
+        component={Feedback}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ContactUs"
+        component={ContactUs}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="MissionAndVisionStatements"
+        component={MissionAndVisionStatements}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="AboutLifeFoundation"
+        component={AboutLifeFoundation}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="SideBarScreen"
+        component={SideBarScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Stories"
+        component={Stories}
+        options={{headerShown: false}}
+      />
+
+      <Stack.Screen
+        name="Inspiration"
+        component={Inspiration}
+        options={{headerShown: false}}
+      />
+    </Stack.Navigator>
+  );
 };
 const styles = StyleSheet.create({
   tabBarStyle: {

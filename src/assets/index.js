@@ -3,6 +3,14 @@ export const images = {
   background: require('./images/background.png'),
   banner: require('./images/banner.png'),
   gradient: require('./images/gradient.png'),
+  inspiration: require('./images/inspiration.png'),
+  inspiration1: require('./images/inspiration1.png'),
+  inspiration2: require('./images/inspiration2.png'),
+  profile1: require('./images/profile1.png'),
+  profile2: require('./images/profile2.png'),
+  drawerBackground: require('./images/drawerBackground.png'),
+  dropDown: require('./images/dropDown.png'),
+  whatsapp: require('./images/whatsapp.png'),
 };
 export const icons = {
   back: require('./icons/back.png'),
@@ -17,6 +25,7 @@ export const icons = {
   phoneIcon: require('./icons/phoneIcon.png'),
   emailIcon: require('./icons/emailIcon.png'),
   locationIcon: require('./icons/locationIcon.png'),
+  phoneRedIcon: require('./icons/phoneRedIcon.png'),
 };
 export const tabIcons = {
   liveLife: require('./tabIcons/liveLife.png'),
