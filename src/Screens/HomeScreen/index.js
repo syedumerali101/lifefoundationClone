@@ -210,7 +210,7 @@ const HomeScreen = () => {
         </View>
       </ScrollView>
 
-      {/* <TabBar /> */}
+      <TabBar />
     </View>
   );
 };

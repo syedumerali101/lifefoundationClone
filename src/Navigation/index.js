@@ -34,7 +34,6 @@ const TabsNavigation = () => {
   );
 };
 const Navigation = () => {
-  return <ContactUs />;
   return <HomeScreen />;
 };
 const styles = StyleSheet.create({
