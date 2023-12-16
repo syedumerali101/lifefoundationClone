@@ -79,7 +79,7 @@ const HomeScreen = () => {
       />
       <ScrollView
         style={{flex: 1}}
-        contentContainerStyle={{alignItems: 'center'}}>
+        contentContainerStyle={{alignItems: 'center', paddingBottom: vh * 10}}>
         <AppButton
           icon={icons.call}
           text="I Need Some Help"

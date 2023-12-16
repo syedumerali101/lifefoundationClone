@@ -8,5 +8,7 @@ const defaultColors = {
   yellow: '#FFB903',
   txtColor: '#222222',
   greenColor: '#009E0F',
+  borderColor: '#FAF3E0',
+  
 };
 export default defaultColors;
