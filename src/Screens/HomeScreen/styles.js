@@ -22,7 +22,12 @@ const styles = StyleSheet.create({
     fontSize: defaultSizes.txtColor,
   },
   rightContainer: {
-    width: vw * 30,
+    width: vw * 35,
+    alignItems: 'center',
+  },
+  centerContainer: {
+    width: vw * 20,
+    alignItems: 'center',
   },
   phoneTxt: {
     color: colors.blue,

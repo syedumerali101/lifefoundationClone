@@ -110,19 +110,21 @@ const HomeScreen = () => {
             <AppText style={styles.textStyle}>
               National Suicide Prevention Hotline:
             </AppText>
-            <AppText style={styles.phoneTxt}>800-273-8255</AppText>
+            <AppText style={[styles.phoneTxt, {width: vw * 28}]}>
+              800-273-8255
+            </AppText>
+          </View>
+          <View style={styles.centerContainer}>
+            <AppText style={styles.textStyle}>or text "HOME" to :</AppText>
+            <AppText style={[styles.phoneTxt, {width: vw * 15}]}>
+              741741
+            </AppText>
           </View>
           <View style={styles.rightContainer}>
-            <AppText style={styles.textStyle}>
-              National Suicide Prevention Hotline:
+            <AppText style={styles.textStyle}>Substance Use Disorders:</AppText>
+            <AppText style={[styles.phoneTxt, {width: vw * 25}]}>
+              800-662-4357
             </AppText>
-            <AppText style={styles.phoneTxt}>800-273-8255</AppText>
-          </View>
-          <View style={styles.rightContainer}>
-            <AppText style={styles.textStyle}>
-              National Suicide Prevention Hotline:
-            </AppText>
-            <AppText style={styles.phoneTxt}>800-273-8255</AppText>
           </View>
         </View>
 
